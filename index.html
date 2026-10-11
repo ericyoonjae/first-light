@@ -567,7 +567,7 @@ function renderBriefing(){
 }
 
 /* ---------- sports ---------- */
-const SPORTS=[{k:"home",name:"Home"},{k:"soccer",name:"Soccer",ic:"⚽"},{k:"mlb",name:"MLB",ic:"⚾"},{k:"nfl",name:"NFL",ic:"🏈"},{k:"nba",name:"NBA",ic:"🏀"}];
+const SPORTS=[{k:"home",name:"Home"},{k:"soccer",name:"Soccer",ic:"⚽"},{k:"mlb",name:"MLB",ic:"⚾"},{k:"kbo",name:"KBO",ic:"⚾"},{k:"nfl",name:"NFL",ic:"🏈"},{k:"nba",name:"NBA",ic:"🏀"}];
 let sport = store("rd-sport")||"home", league = store("rd-league")||"epl", country = store("rd-country")||"eng";
 const COUNTRIES=[{k:"eng",name:"England",ic:"🏴󠁧󠁢󠁥󠁮󠁧󠁿"},{k:"esp",name:"Spain",ic:"🇪🇸"},{k:"ger",name:"Germany",ic:"🇩🇪"},{k:"fra",name:"France",ic:"🇫🇷"},{k:"kor",name:"South Korea",ic:"🇰🇷"},{k:"usa",name:"USA",ic:"🇺🇸"},{k:"eur",name:"European cups",ic:"🏆"},{k:"intl",name:"International",ic:"🌍"}];
 let leagues={}, snews={};
@@ -598,7 +598,7 @@ function leagueBlock(L){
   const right=el("div",{className:"box"});
   if(L.upcoming?.length){ right.append(el("h3",{},"Coming up"), ...L.upcoming.map(scoreRow)); }
   const tb=tableEl(L.table,soccer);
-  if(tb){ right.append(el("h3",{style:"margin-top:10px"},soccer?"Top of the table":"Division leaders"), tb); }
+  if(tb){ right.append(el("h3",{style:"margin-top:10px"},soccer?"Top of the table":(L.tableTitle||"Division leaders")), tb); }
   return el("div",{className:"box"},
     el("div",{style:"display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:baseline"},el("h2",{className:"sec"},L.name),L.phase?el("span",{className:"phase"},L.phase):null),
     L.note?el("p",{className:"muted",style:"margin:0;max-width:65ch"},L.note):null,

@@ -770,6 +770,110 @@
    ],
    "updatedAt": "2026-10-11T10:55:00Z"
   },
+  "kbo": {
+   "name": "KBO",
+   "group": "kbo",
+   "order": 1,
+   "updatedAt": "2026-10-11T19:00:00Z",
+   "phase": "Regular season ends Mon; postseason from Oct 14",
+   "results": [
+    {
+     "t": "2026-10-11T12:00:00Z",
+     "dateOnly": true,
+     "away": "KT Wiz",
+     "home": "Samsung",
+     "as": 12,
+     "hs": 3
+    },
+    {
+     "t": "2026-10-11T12:00:00Z",
+     "dateOnly": true,
+     "away": "Lotte",
+     "home": "Kia",
+     "as": 4,
+     "hs": 1
+    },
+    {
+     "t": "2026-10-10T12:00:00Z",
+     "dateOnly": true,
+     "away": "LG",
+     "home": "Lotte",
+     "as": 4,
+     "hs": 3,
+     "label": "10 inn."
+    },
+    {
+     "t": "2026-10-10T12:00:00Z",
+     "dateOnly": true,
+     "away": "NC",
+     "home": "Hanwha",
+     "as": 9,
+     "hs": 8
+    },
+    {
+     "t": "2026-10-10T12:00:00Z",
+     "dateOnly": true,
+     "away": "SSG",
+     "home": "Kia",
+     "as": 5,
+     "hs": 8
+    }
+   ],
+   "upcoming": [
+    {
+     "t": "2026-10-12T09:30:00Z",
+     "away": "LG",
+     "home": "Kia",
+     "label": "Decides No. 3 seed"
+    },
+    {
+     "t": "2026-10-12T09:30:00Z",
+     "away": "KT Wiz",
+     "home": "Samsung"
+    },
+    {
+     "t": "2026-10-12T09:30:00Z",
+     "away": "Lotte",
+     "home": "Doosan"
+    },
+    {
+     "t": "2026-10-14T12:00:00Z",
+     "dateOnly": true,
+     "away": "Doosan",
+     "home": "No. 4 seed",
+     "label": "Wild card G1"
+    }
+   ],
+   "table": [
+    {
+     "note": "1",
+     "team": "KT Wiz",
+     "rec": "89-49-5"
+    },
+    {
+     "note": "2",
+     "team": "Samsung",
+     "rec": "83-57-3"
+    },
+    {
+     "note": "3",
+     "team": "Kia",
+     "rec": "78-63-2"
+    },
+    {
+     "note": "4",
+     "team": "LG",
+     "rec": "78-64-1"
+    },
+    {
+     "note": "5",
+     "team": "Doosan",
+     "rec": "73-65-5"
+    }
+   ],
+   "note": "Records are W-L-T. Top five make the postseason; KT Wiz wait in the Korean Series from Nov. 2.",
+   "tableTitle": "Standings"
+  },
   "kleague1": {
    "country": "kor",
    "group": "soccer",
@@ -2043,6 +2147,32 @@
    "overview": "Cleveland finished a comeback from 0–2 down, blanking the White Sox 2–0 in ALDS Game 5 behind 12 strikeouts from Gavin Williams and a two-run homer from José Ramírez; the Guardians open the ALCS at Tampa Bay on Monday. The NLCS starts tonight in Milwaukee, with Tarik Skubal facing Jacob Misiorowski. NFL Week 5 resumes with Eagles–Jaguars in London, where Philadelphia is without Saquon Barkley and DeVonta Smith, plus Bears–Packers and 49ers–Seahawks, and Tyler Huntley starts for the injured Lamar Jackson as Baltimore visits Atlanta on Sunday night. In NBA preseason, Boston routed Philadelphia 144–106.\n\nArsenal rallied past Leeds 2–1 and Chelsea routed Bournemouth 5–1, while Man United and Tottenham drew 1–1 ahead of Man City's trip to Liverpool today. Barcelona made it eight wins from eight with a 3–0 win over Getafe, and Real Madrid beat Villarreal 1–0 but lost Vinícius Júnior to a red card. RB Leipzig crushed Frankfurt 6–0, Bayern drew 2–2 at Augsburg and PSG beat Le Mans 3–1. In Korea, Gwangju upset Ulsan HD 4–3 and Suwon Samsung beat Ansan 4–1 behind a Lewis hat-trick.",
    "updatedAt": "2026-10-11T11:00:00Z"
   },
+  "kbo": {
+   "updatedAt": "2026-10-11T19:00:00Z",
+   "brief": [
+    "KT Wiz (89-49-5) won the regular-season title and go straight to the Korean Series, which starts Nov. 2.",
+    "Samsung are locked in at No. 2 with a bye to the best-of-five second round.",
+    "Kia lost 4-1 to Lotte on Sunday, so Monday's Kia-LG finale in Gwangju decides the No. 3 seed; Kia keep it with a win or a tie.",
+    "Doosan finished fifth and open the wild card round on the road Oct. 14, needing two straight wins to advance."
+   ],
+   "headlines": [
+    {
+     "title": "1 postseason spot up for grabs as KBO regular season winds down",
+     "url": "https://www.koreatimes.co.kr/sports/20261008/1-postseason-spot-up-for-grabs-as-kbo-regular-season-winds-down",
+     "source": "Korea Times"
+    },
+    {
+     "title": "KBO postseason to begin Oct. 14",
+     "url": "https://www.koreatimes.co.kr/sports/20261007/kbo-postseason-to-begin-oct-14",
+     "source": "Korea Times"
+    },
+    {
+     "title": "Kia's ninth-inning rally pushes slumping LG out of third place in KBO race",
+     "url": "https://www.koreajoongangdaily.com/sports/kias-ninthinning-rally-pushes-slumping-lg-out-of-third-place-in-kbo-race/12904739",
+     "source": "Korea JoongAng Daily"
+    }
+   ]
+  },
   "mlb": {
    "brief": [
     "Gavin Williams struck out 12 over 5 2/3 scoreless innings and José Ramírez hit a two-run homer as Cleveland beat the White Sox 2–0 in ALDS Game 5.",
@@ -2903,116 +3033,6 @@
    "summary": "The Pentagon says Fort Hood shooter Nidal Malik Hasan's firing squad execution will be livestreamed, following Defense Secretary Pete Hegseth's statement it would be public.",
    "title": "Pentagon says firing squad execution of Fort Hood shooter will be livestreamed",
    "url": "https://www.pbs.org/newshour/nation/pentagon-says-firing-squad-execution-of-fort-hood-shooter-will-be-livestreamed"
-  },
-  {
-   "id": "nation-63b1d90ec56b",
-   "added": "2026-10-08T18:31:35Z",
-   "author": "Victoria Law",
-   "published": "2026-10-08T14:53:57Z",
-   "source": "nation",
-   "summary": "An interview with Harriet Clark about her first novel, having a mother in prison, and the role artists play in documenting atrocities.",
-   "title": "“The Best Possible Version of a Tragedy”: Harriet Clark on Her Debut Novel",
-   "url": "https://www.thenation.com/article/society/harriet-clark-debut-novel/"
-  },
-  {
-   "id": "time-9fa20da6307d",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T13:04:57Z",
-   "source": "time",
-   "summary": "French students protesting underfunded schools are invoking the 1968 uprising.",
-   "title": "Student Protesters in France are Holding Signs Referencing May 1968. Here's Why It's Significant",
-   "url": "https://time.com/article/2026/10/07/student-protests-france-signs-may-1968-strikes-police-clashes/"
-  },
-  {
-   "id": "time-38d059b72f37",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T12:39:51Z",
-   "source": "time",
-   "summary": "Kansas's Senate race has tightened between Roger Marshall and Democrat Adam Hamilton.",
-   "title": "Kansas Has Emerged as a Senate Battleground State. Here's Why It Matters",
-   "url": "https://time.com/article/2026/10/07/why-kansas-has-emerged-as-a-new-battleground-state-and-why-it-matters/"
-  },
-  {
-   "id": "nation-8afe938c4099",
-   "added": "2026-10-08T18:31:35Z",
-   "author": "Peter Kuper",
-   "published": "2026-10-08T12:30:34Z",
-   "source": "nation",
-   "summary": "A cartoon about Justice Clarence Thomas that presents him as a symbol of corruption.",
-   "title": "Harlan Crow’s Portrait of SCOTUS Under Trump",
-   "url": "https://www.thenation.com/article/politics/harlan-crows-portrait-of-scotus-under-trump/"
-  },
-  {
-   "id": "npr-f5b4199af589",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T12:13:54Z",
-   "source": "npr",
-   "summary": "Seoul will pull its ambassador from Kyiv in a dispute involving North Korean prisoners of war.",
-   "title": "South Korea to recall its ambassador to Ukraine over North Korean POW dispute",
-   "url": "https://www.npr.org/2026/10/08/g-s1-147115/south-korea-to-recall-its-ambassador-to-ukraine-over-north-korean-pow-dispute"
-  },
-  {
-   "id": "npr-77d8b5054628",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T12:01:34Z",
-   "source": "npr",
-   "summary": "The test follows a North Korean hypersonic launch and rising border tensions.",
-   "title": "South Korea test-flies its first domestically developed hypersonic weapon",
-   "url": "https://www.npr.org/2026/10/08/g-s1-147113/south-korea-test-flies-its-first-domestically-developed-hypersonic-weapon"
-  },
-  {
-   "id": "time-b71e6e414ebf",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T12:01:03Z",
-   "source": "time",
-   "summary": "A review of CBS's new Silicon Valley legal drama.",
-   "title": "Cupertino Is More Fun Than a Tech-Dystopian Legal Drama Has Any Right to Be",
-   "url": "https://time.com/article/2026/10/08/cupertino-review-cbs/"
-  },
-  {
-   "id": "time-084652eb2074",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T12:00:03Z",
-   "source": "time",
-   "summary": "An interview with the Oklahoma City Thunder star.",
-   "title": "'I Think I'm the Best Player in the NBA.' The Excellence of Shai Gilgeous-Alexander",
-   "url": "https://time.com/article/2026/10/08/shai-gilgeous-alexander-sga-interview/"
-  },
-  {
-   "id": "nation-8b418a5d8d68",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T12:00:00Z",
-   "source": "nation",
-   "summary": "Women dismissed from federal jobs describe struggling with shame despite having done their work well.",
-   "title": "Recovering From a “Gut Punch”: Black Women Fired by Trump and Musk Work to Overcome Shame and Self-Blame",
-   "url": "https://www.thenation.com/article/society/gut-punch-black-women-fired-work-to-overcome-shame/"
-  },
-  {
-   "id": "nation-8d2a9287f348",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T12:00:00Z",
-   "source": "nation",
-   "summary": "A $110 billion Ellison family deal for Warner Bros. Discovery would concentrate control over entertainment and news.",
-   "title": "How the Skydance Merger Will Remake Hollywood and the News Business",
-   "url": "https://www.thenation.com/article/society/skydance-merger-cnn-warner-bros-hollywood/"
-  },
-  {
-   "id": "npr-4a127f582e37",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T11:35:22Z",
-   "source": "npr",
-   "summary": "Up First: Gulf residents prepare as Isaias strengthens into a hurricane.",
-   "title": "Isaias intensifies to hurricane. And, judge orders Pike execution evidence preserved",
-   "url": "https://www.npr.org/2026/10/08/g-s1-147105/up-first-newsletter-hurricane-isaias-house-elections-christa-pike-nidal-hasan-cnn-ms-now-politico"
-  },
-  {
-   "id": "npr-ccf70c89ba01",
-   "added": "2026-10-08T14:45:00Z",
-   "published": "2026-10-08T11:25:28Z",
-   "source": "npr",
-   "summary": "Russian attacks in eastern Ukraine killed 30 and deepened power outages in Kyiv.",
-   "title": "Strike on Ukrainian public bus leaves 30 dead as blackouts worsen in Kyiv",
-   "url": "https://www.npr.org/2026/10/08/g-s1-147106/russia-ukraine-war"
   },
   {
    "id": "e360-fa59c533c14f",
