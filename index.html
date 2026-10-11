@@ -445,6 +445,14 @@ html.modern .ftile{display:none}
 
 .ud-short{display:none}
 @media(max-width:640px){html:not(.modern) .ud-full{display:none}html:not(.modern) .ud-short{display:inline}}
+
+/* pixel sport icons + scene (Original look only) */
+.chip .spi{width:16px;height:16px;image-rendering:pixelated;flex:none}
+html.modern .chip .spi{display:none}
+.brief-body{display:flow-root}
+.brief .scene{float:right;width:144px;height:144px;image-rendering:pixelated;margin:8px 8px 8px 10px;border:2px solid;border-color:#808080 #fff #fff #808080;outline:1px solid #000}
+@media(max-width:600px){.brief .scene{width:96px;height:96px;margin:8px 6px 6px 8px}}
+html.modern .brief .scene{display:none}
 /* ===== edition toggle ===== */
 .uitoggle{all:unset;box-sizing:border-box;cursor:pointer;position:absolute;top:17px;right:14px;z-index:2}
 .uitoggle:focus-visible{outline:2px dotted #000;outline-offset:3px}
@@ -604,15 +612,17 @@ function leagueBlock(L){
     L.note?el("p",{className:"muted",style:"margin:0;max-width:65ch"},L.note):null,
     (left.childNodes.length||right.childNodes.length)?el("div",{className:"grid2"},left,right):null);
 }
+const SPICON={"home": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAf0lEQVR42mNgGGjACGP8P8PwnySNJhC9LDCBk6cgtLkZAwODMdSss4wYGmHqYIAJpxVYNGMDTJRoRgkDUsIB5n8MFyBLEKMZqxfwGUKMBSjgxDSG/yem4fcWE9USErrN2MQtsjDVYzUAV2xgCwMMgSg9Prx+XnbpEyNVw4BiAAC1yhzXDNfCYwAAAABJRU5ErkJggg==", "soccer": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAe0lEQVR42q1TQQ7AIAijxP9/mR0IGUE7WLbeLLSiAOQMIzw6wkREzFwPeLies25lcSQyJCMLE0zFW+leDbQQWxLjA8o+LCedTKJyre+bIOcqE2fuKb6mNzGofIQ2n9S18Z6DWnI1JTH80wU3xbgLMYXtMj0MF+h6vl3nC1nlQxgiQU9OAAAAAElFTkSuQmCC", "mlb": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAe0lEQVR42sVTyQ3AMAiDTAFTdP8tkikyhvspFcrRIlGpfgI2JnKIkuBNHdF5XhGBNZ+ZJ17xZABURaipTuSmSlXExLESuHH0Hqp5AXjbOwfO6vROAIAqgjfYjAmUp02RXoneuuv974DHHNiWcdjXr0DxJzlIRzn9mdI4AeqAa9oojRWrAAAAAElFTkSuQmCC", "kbo": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAe0lEQVR42sVTyQ3AMAiDTAFTdP8tkikyhvspFcrRIlGpfgI2JnKIkuBNHdF5XhGBNZ+ZJ17xZABURaipTuSmSlXExLESuHH0Hqp5AXjbOwfO6vROAIAqgjfYjAmUp02RXoneuuv974DHHNiWcdjXr0DxJzlIRzn9mdI4AeqAa9oojRWrAAAAAElFTkSuQmCC", "nfl": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAi0lEQVR42mNgGGjAiE0wSo/vPzbxZZc+YahnwabRUIYPl4X/0Q1iRNaMRyMKOP/kE9wQJpjmpRc/Eu3vpRc/wl3LhE1BydbHWGlsgAmX0wkZYijDxxClx/efCZfJPd6yWGms0QgLA1yKsLkuWp+fYdmlT4xMVEtI5EYjIykJ6fyTTww4ExK5SXngAQCN/0drYeTq+gAAAABJRU5ErkJggg==", "nba": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeUlEQVR42q2TwQ3AIAhFgTiA4zqC47oBPRgTSj5qq1yMIp8HKNGhcXCuu/cFBGorfePX4Y8EtJV+OddXEBLTiOCzic1OhLNbCuPXqwTL7J7Cj0X/PoMU1DelsgQyw0PmBYcArwIBAcMpzChQOck2JNd1M232K5/p2B5CpzMhhrqePwAAAABJRU5ErkJggg=="};
+const SPSCENE={soccer:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAABrklEQVR42u1YsXLCMAyVc57YOydLWM3GF2TmLzqXFe7aY+iczgz9hX4AP1A2sjIlW++6s5pJuZTaGGIZO75oie0k5D3pSTJmr99SwoCN3/LQZv53/rYfAIFL0Kp7IRDhNi9v5jQkbCLMfXmOKsKJDQjXErpG0hiBkBLVWQRc2y1O5CGDG3wEnPWBkKIWbwTQmqbxDjJN0/458PmTtldf46iTmOm205jEIUlIlcQsX+VKAsf3IwAATNdT2D3voNgWAABexl0s8UlIlEIZgcPLITgJzT5m90dg8bVor77GcVehUUKjhCwlZOoDIUmoVx/AplJsC2/jUUKjhEYJPbiRZVmmXK/rmryRMSnpjtcZYwAAgD9pmpP8J1ax6mPVsjIC6xIRpQjnXEgHXkqpXa+WVVgHWyiPyzXdOpUlFN43EdIBpogCP/2eSDxxT2JKKVtStt9PXIHvrpnuOz2Ze1RUvCexLyMh0KeqUFUiawL5KlcCwhKqKqU4x3etcmDyNPFWhSi+TSIhUYp/Xr5WhSi3EmRVqEsCAauA47NkmznKioDAdAlKCdxpH3ABNNo+cAbpaWVAe0ZMTgAAAABJRU5ErkJggg=="};
 function newsBlocks(key){
   const n=snews[key]; const out=[];
-  if(n?.brief?.length) out.push(el("div",{className:"brief"},el("h3",{},"What to know"),el("ul",{},...n.brief.map(b=>el("li",{},b)))));
+  if(n?.brief?.length) out.push(el("div",{className:"brief"},el("h3",{},"What to know"),el("div",{className:"brief-body"},...(SPSCENE[key]?[el("img",{className:"scene",src:SPSCENE[key],alt:"",width:48,height:48})]:[]),el("ul",{},...n.brief.map(b=>el("li",{},b))))));
   if(n?.headlines?.length) out.push(el("div",{className:"box"},el("h3",{},"Headlines"),el("div",{className:"heads"},...n.headlines.map(h=>el("a",{href:h.url,target:"_blank",rel:"noopener"},h.title,el("small",{},h.source||""))))));
   return out;
 }
 function renderSports(){
   const chips=$("sportChips"); chips.replaceChildren();
-  for(const s of SPORTS){ const b=el("button",{className:"chip",type:"button"},s.name); b.setAttribute("aria-pressed",String(sport===s.k)); b.addEventListener("click",()=>{sport=s.k;store("rd-sport",s.k);renderSports();}); chips.append(b); }
+  for(const s of SPORTS){ const b=el("button",{className:"chip",type:"button"},...(SPICON[s.k]?[el("img",{className:"spi",src:SPICON[s.k],alt:"",width:16,height:16})]:[]),s.name); b.setAttribute("aria-pressed",String(sport===s.k)); b.addEventListener("click",()=>{sport=s.k;store("rd-sport",s.k);renderSports();}); chips.append(b); }
   const body=$("sportBody");
   if(!Object.keys(leagues).length && !Object.keys(snews).length) return;
   const parts=[...newsBlocks(sport)];
